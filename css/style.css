@@ -1,0 +1,66 @@
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-buttons button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 30px auto;
+}
+
+
+.image-container {
+  position: relative;
+  display: flex; /* 수평 중앙 정렬을 위해 flex 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  margin: 25px;
+}
+
+.image-container:nth-child(3n+2) {
+  margin-top: 100px;
+}
+
+.image-container img {
+  max-width: 100%; /* 이미지가 컨테이너를 벗어나지 않도록 함 */
+  display: block; /* 이미지를 블록 요소로 설정하여 텍스트가 이미지 아래에 나타나도록 함 */
+}
+
+.image-container.brightness img {
+  filter: brightness(50%);
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1;
+}
+
+.footer-image {
+  max-width: 100%;
+}

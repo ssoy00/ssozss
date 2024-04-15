@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    color: #ffdede;
+    text-align: center;
+}
+h2 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.6;
+}
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+.section {
+    margin-bottom: 30px;
+}
+
+hr { /* hr 태그에 스타일 적용 */
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0; /* 위아래 간격 조절 */
+}
