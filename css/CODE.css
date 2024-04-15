@@ -30,8 +30,8 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: calc(100% - 22px); /* 전체 너비에서 padding 값(10px * 2)과 border 값(1px * 2)을 빼줍니다. */
-    padding: 8px; /* padding 값을 조금 줄입니다. */
+    width: calc(100% - 22px);
+    padding: 8px; 
     border: 1px solid #ccc;
     border-radius: 3px;
 }

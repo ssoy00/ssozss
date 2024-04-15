@@ -26,9 +26,9 @@ body {
 
 .image-container {
   position: relative;
-  display: flex; /* 수평 중앙 정렬을 위해 flex 사용 */
-  justify-content: center; /* 수평 중앙 정렬 */
-  align-items: center; /* 수직 중앙 정렬 */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   margin: 25px;
 }
 
@@ -37,8 +37,8 @@ body {
 }
 
 .image-container img {
-  max-width: 100%; /* 이미지가 컨테이너를 벗어나지 않도록 함 */
-  display: block; /* 이미지를 블록 요소로 설정하여 텍스트가 이미지 아래에 나타나도록 함 */
+  max-width: 100%; 
+  display: block; 
 }
 
 .image-container.brightness img {
