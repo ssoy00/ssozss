@@ -1,8 +1,6 @@
-
 body {
   background-color: black;
   color: white;
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -26,41 +24,58 @@ body {
 
 .image-container {
   position: relative;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex; /* 수평 중앙 정렬을 위해 flex 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
   margin: 25px;
 }
 
 .image-container:nth-child(3n+2) {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .image-container img {
-  max-width: 100%; 
-  display: block; 
+  max-width: 100%; /* 이미지가 컨테이너를 벗어나지 않도록 함 */
+  display: block; /* 이미지를 블록 요소로 설정하여 텍스트가 이미지 아래에 나타나도록 함 */
 }
 
 .image-container.brightness img {
   filter: brightness(50%);
 }
+
 .overlay-text {
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 21px;
+  font-weight: 50px;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 }
 
 .image-container:hover .overlay-text {
   opacity: 1;
 }
 
-.footer-image {
-  max-width: 100%;
+
+@font-face {
+  font-family: 'DX시인과나';
+  src: url('fonts\DX시인과나Bold.woff') format('woff')
+}
+
+.wfont {
+  font-family: 'DX시인과나', sans-serif;
+}
+
+#scrollBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px; /* 원하는 너비로 조정하세요 */
+  height: 50px; /* 높이 자동 조정 */
+  cursor: pointer;
 }

@@ -10,9 +10,30 @@ imageContainers.forEach(container => {
   });
 });
 function goToSignupPage() {
-    // 여기에 회원가입 페이지로 이동하는 코드를 추가합니다.
+
     window.location.href = "NEW_CODE.html";
 }
 function redirectToLoginPage() {
     window.location.href = "CODE.html";
 }
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+document.getElementById("scrollBtn").addEventListener("click", function() {
+  topFunction();
+});

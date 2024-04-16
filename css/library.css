@@ -10,27 +10,35 @@ body {
     padding: 20px;
 }
 h1 {
-    color: #ffdede;
+    color: #d8e9ff;
     text-align: center;
+    font-size: 55px;
 }
 h2 {
     color: #ffffff;
+    font-size: 35px;
 }
 
 p {
     color: #ffffff;
     line-height: 1.6;
-}
-.highlight {
-    color: #007bff;
-    font-weight: bold;
+    font-size: 20px;
 }
 .section {
     margin-bottom: 30px;
 }
 
-hr {
+hr { /* hr 태그에 스타일 적용 */
     border: none;
     border-top: 1px solid #ddd;
-    margin: 20px 0; 
+    margin: 20px 0; /* 위아래 간격 조절 */
 }
+
+@font-face {
+    font-family: 'DX시인과나';
+    src: url('fonts\DX시인과나Bold.woff') format('woff')
+  }
+  
+  .wfont {
+    font-family: 'DX시인과나', sans-serif;
+  }
