@@ -37,3 +37,8 @@ function topFunction() {
 document.getElementById("scrollBtn").addEventListener("click", function() {
   topFunction();
 });
+
+function displayAlert() {
+  alert("확인됐습니다. 방에서 기다리시면 사서가 가져다줄 것입니다.");
+  window.location.href = "ssoz_library.html";
+}

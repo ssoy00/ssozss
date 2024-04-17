@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .auth-buttons button {
   background-color: #555;
   color: white;
@@ -73,6 +72,8 @@ body {
 
 #scrollBtn {
   position: fixed;
+  background-color: gray;
+  color:white ;
   bottom: 20px;
   right: 20px;
   width: 50px; /* 원하는 너비로 조정하세요 */
