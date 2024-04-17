@@ -3,7 +3,7 @@ window.onload = function() {
 
   if (window.innerWidth <= 1000) {
       setTimeout(() => {
-          character.style.display = 'None';
+          character.style.opacity = 0;
       }, 3000);
   }
 }
