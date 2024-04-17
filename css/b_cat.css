@@ -1,12 +1,12 @@
 #b_cat {
     position: absolute;
     bottom: 50px;
-    left: -300px;
+    left: -200px;
     width: 500px;
     height: 400px;
     background-image: url('../img/zizi.gif'); /* 캐릭터 이미지 파일 경로 */
     background-size: cover;
-    animation: walk 20s infinite;
+    animation: walk 12s infinite;
     z-index: 1;
 }
 
