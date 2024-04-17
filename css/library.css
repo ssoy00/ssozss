@@ -36,7 +36,7 @@ hr { /* hr 태그에 스타일 적용 */
 
 @font-face {
     font-family: 'DX시인과나';
-    src: url('fonts\DX시인과나Bold.woff') format('woff')
+    src: url('../fonts/DX시인과나Bold.woff') format('woff')
   }
   
   .wfont {
