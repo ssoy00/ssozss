@@ -18,6 +18,13 @@ function redirectToLoginPage() {
 }
 
 
+var welcomeButton = document.getElementById("main");
+
+welcomeButton.addEventListener("click", function() {
+    window.location.href = "index.html";
+});
+
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
