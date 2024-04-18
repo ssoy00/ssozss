@@ -28,10 +28,10 @@ p {
     margin-bottom: 30px;
 }
 
-hr { /* hr 태그에 스타일 적용 */
+hr {
     border: none;
     border-top: 1px solid #ddd;
-    margin: 20px 0; /* 위아래 간격 조절 */
+    margin: 20px 0; 
 }
 
 @font-face {
